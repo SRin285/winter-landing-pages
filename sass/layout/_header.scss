@@ -1,0 +1,53 @@
+.header{
+  background-color: $hero-color;
+  
+  &-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px 0;
+    border-bottom: 1px solid #F2EADA;
+  }
+  &-icon{
+    display: flex;
+    align-items: center;
+    gap: 0 32px;
+  }
+  @media screen and (min-width: 1080px) {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    .header-icon{
+      margin-left: 230px;
+    }
+  }
+  
+  @media screen and (max-width: 1024.98px) {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    .header-icon{
+      margin-left: 230px;
+    }
+  }
+  @media screen and (max-width: 1023.98px) {
+    .header-icon{
+      margin-left: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 767.98px) {
+    position: static;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 767.98px) {
+
+}

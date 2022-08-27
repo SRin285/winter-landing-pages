@@ -1,0 +1,16 @@
+body{
+  line-height: 1.2;
+  font-family: $font-primary;
+  color: $color-text;
+  font-weight: 400;
+  background-color:$white-color ;
+}
+.wraper{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

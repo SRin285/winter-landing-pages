@@ -1,0 +1,161 @@
+.client{
+  background-color: #FFFAE9;
+  &-header{
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+  &-heading{
+    text-align: center;
+  }
+  &-more{
+    margin: 0 auto;
+    max-width: 528px;
+    text-align: center;
+  }
+  &-list{
+    padding-bottom: 146px;
+  }
+  &-item{
+    display: flex;
+    align-items: center;
+    gap: 110px;
+  }
+  &-images{
+    width: 270px;
+    height: 283px;
+    flex-shrink: 0;
+    object-fit: cover;
+    background: #f1a50b;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+  }
+  &-name{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(23/18);
+    text-transform: uppercase;
+    color: $color-text;
+    margin-bottom: 4px;
+  }
+  &-job{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    text-align: center;
+    color: $gray-color;
+  }
+  &-content{
+    max-width: 770px;
+  }
+  &-desc{
+    padding-bottom: 29px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 46px;
+    color: $gray-color;
+  }
+  &-job{
+    display: flex;
+    align-items: center;
+    gap :0 200px;
+  }
+  &-rating{
+    display: flex;
+    align-items: center;
+    gap: 0 2px ;
+    font-size: 25px;
+    i{
+      color: #f1a50b;
+      &:last-child  {
+        color:$gray-color ;
+      }
+    }
+  }
+
+}
+.slick-initialized .slick-slide {
+  display: flex;
+}
+.slick-dots {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+  margin-top: 48px;
+  padding-left: 100px;
+  button{
+    font-size: 0;
+    background-color: $red-color;
+    width: 15px;
+    height: 15px;
+    border-radius: 100rem;
+    transition: all 0.2s linear;
+  }
+  .slick-active button{
+    background-color: #f1a50b;
+    border: 1px solid $color-text;
+    transition: all 0.2s linear;
+  }
+}
+.slick-active{
+  display: flex;
+  align-items: center;
+}
+.slick-arrow{
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateY(50%);
+  // bottom: 50%;
+  z-index: 100;
+  bottom: 50%;
+  @media screen and (max-width: 1024.98px) {
+  bottom: 150px;
+  }
+  
+}
+.slick-prev{
+  border: 1px solid #f1a50b;
+  background-color: transparent;
+  right: 80px;
+}
+.slick-next{
+  border: 1px solid #f1a50b;
+  background-color: $red-color;
+  right: 0;
+}
+@media screen and (max-width: 1024.98px) {
+  .client{
+    &-item{
+      gap: 0 30px;
+    }
+    &-desc{
+      font-size: 25px;
+    }
+    &-job{
+      justify-content: space-between;
+    }
+  }
+
+}
+@media screen and (max-width: 767.98px) {
+  .slick-initialized .slick-slide {
+    display: block;
+}
+  .slick-arrow{
+    bottom: 80px;
+  }
+  .client{
+    &-desc{
+      font-size: 16px;
+    }
+    &-job{
+      gap: 0;
+    }
+  }
+}

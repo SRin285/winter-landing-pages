@@ -1,0 +1,29 @@
+button{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: $font-primary;
+}
+.btn{
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-family: $font-primary;
+  line-height: 1;
+  font-size: 18px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  &--primary{
+    background-color: $red-color;
+    color: $white-color;
+  }
+  &--outline{
+    background-color: $hero-color;
+    color: $color-text;
+    outline: $color-text 1px solid;
+  }
+}
